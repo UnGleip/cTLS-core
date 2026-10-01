@@ -1,0 +1,11 @@
+/target
+**/*.rs.bk
+*.pdb
+
+# tool/editor caches (never commit)
+.freebuff/
+.kilo/
+*.db
+*.db-shm
+*.db-wal
+.review-backups/

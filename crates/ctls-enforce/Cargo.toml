@@ -1,0 +1,23 @@
+[package]
+name = "ctls-enforce"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+ctls-core.workspace = true
+ctls-vault.workspace = true
+thiserror.workspace = true
+tokio.workspace = true
+rustls.workspace = true
+tokio-rustls = { version = "0.26", default-features = false, features = ["ring", "tls12"] }
+anyhow.workspace = true
+time.workspace = true
+rcgen.workspace = true
+sha2.workspace = true
+hex.workspace = true
+zeroize = "1"
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.55"

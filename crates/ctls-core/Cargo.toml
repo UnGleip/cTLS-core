@@ -1,0 +1,16 @@
+[package]
+name = "ctls-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+x509-parser.workspace = true
+sha1.workspace = true
+sha2.workspace = true
+hex.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+time.workspace = true

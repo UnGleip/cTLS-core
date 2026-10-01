@@ -1,0 +1,49 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/ctls-core",
+    "crates/ctls-platform-win",
+    "crates/ctls-platform",
+    "crates/ctls-scanner",
+    "crates/ctls-vault",
+    "crates/ctls-repo",
+    "crates/ctls-sync",
+    "crates/ctls-enforce",
+    "crates/ctls-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "GPL-3.0-only"
+authors = ["UnGleip"]
+
+[workspace.dependencies]
+ctls-core = { path = "crates/ctls-core" }
+ctls-platform-win = { path = "crates/ctls-platform-win" }
+ctls-platform = { path = "crates/ctls-platform" }
+ctls-scanner = { path = "crates/ctls-scanner" }
+ctls-vault = { path = "crates/ctls-vault" }
+ctls-repo = { path = "crates/ctls-repo" }
+ctls-sync = { path = "crates/ctls-sync" }
+ctls-enforce = { path = "crates/ctls-enforce" }
+
+x509-parser = "0.16"
+sha1 = "0.10"
+sha2 = "0.10"
+hex = "0.4"
+hmac = "0.12"
+rcgen = "0.14"
+thiserror = "2"
+anyhow = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+time = { version = "0.3", features = ["formatting", "parsing"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+aes-gcm = "0.10"
+rand = "0.8"
+reqwest = { version = "0.12", features = ["blocking", "rustls-tls"], default-features = false }
+scraper = "0.20"
+csv = "1"
+tokio = { version = "1", features = ["full"] }
+rustls = { version = "0.23", default-features = false, features = ["ring", "std", "tls12"] }

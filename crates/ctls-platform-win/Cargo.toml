@@ -1,0 +1,21 @@
+[package]
+name = "ctls-platform-win"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[dependencies]
+ctls-core.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+time.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows = { version = "0.61", features = [
+    "Win32_Security_Cryptography",
+    "Win32_Security",
+    "Win32_Foundation",
+    "Win32_System_Registry",
+    "Win32_System_Threading",
+] }

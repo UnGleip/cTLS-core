@@ -1,0 +1,17 @@
+[package]
+name = "ctls-sync"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+description = "CCADB official-CA list downloader with on-disk cache"
+
+[dependencies]
+ctls-core.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+csv.workspace = true
+reqwest.workspace = true
