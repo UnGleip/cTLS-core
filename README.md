@@ -60,7 +60,6 @@ The default data directory is `$HOME/.ctls` on Linux and
 
 - [Architecture and current limitations](docs/architecture.md)
 - [Linux server setup](docs/SERVER.md)
-- [Roadmap](docs/ROADMAP.md)
 - [راهنمای کامل فارسی](docs/GUIDE.md)
 
 ## License
